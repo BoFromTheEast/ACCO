@@ -1,4 +1,5 @@
 import React from "react";
+import TestImage from "./test.jpg";
 
 // This is the navagation bar
 function Navbar() {
@@ -44,9 +45,24 @@ function Navbar() {
 // this will be the first body where there will be words
 function Body() {
   return (
-    <main className="bg-gray-500 p-20 text-white ">
-      <h2 className="text-3xl mb-4">Welcome to ACCO</h2>
-      <p>This is the main content area. Add your content here.</p>
+    <main className="bg-white-500 p-20 text-black flex-grow">
+      {/* This picture will be shown first */}
+      <div className="flex justify-center relative">
+        <div>
+          <img src={TestImage} alt="testing image" />
+        </div>
+        {/* title will be inside of the picture */}
+
+        <div className="absolute inset-0 flex justify-center items-top">
+          <h2 className="text-3xl md-4 text-white p-2 rounded-lg">
+            Welcome to ACCO
+          </h2>
+        </div>
+      </div>
+
+      <div className="flex justify-center">
+        <p>This is the main content area. Add your content here.</p>
+      </div>
     </main>
   );
 }
@@ -55,14 +71,16 @@ function Body() {
 function Secondbody() {
   return (
     <main className="bg-gray-500 p-20 text-white flex-grow">
-      <p>This is the main content area. Add your content here.</p>
+      <div className="flex justify-center">
+        <p>This is the second content area. Add your content here.</p>
+      </div>
     </main>
   );
 }
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white p-4 mt-auto text-center">
+    <footer className="bg-white-800 text-black p-4 mt-auto text-center ">
       <p>&copy; 2024 ACCO. All rights reserved.</p>
     </footer>
   );
