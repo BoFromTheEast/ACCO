@@ -60,7 +60,7 @@ function Body() {
         </div>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-10 ">
         <p>This is the main content area. Add your content here.</p>
       </div>
     </main>
