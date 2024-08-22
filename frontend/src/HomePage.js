@@ -42,40 +42,66 @@ function Navbar() {
   );
 }
 
-// this will be the first body where there will be words
+// This first body is a brief description of what our company is about
 function Body() {
   return (
-    <main className="bg-white-500 p-20 text-black flex-grow">
-      {/* This picture will be shown first */}
-      <div className="flex justify-center relative">
-        <div>
-          <img src={TestImage} alt="testing image" />
-        </div>
-        {/* title will be inside of the picture */}
-
-        <div className="absolute inset-0 flex justify-center items-top">
-          <h2 className="text-3xl md-4 text-white p-2 rounded-lg">
-            Welcome to ACCO
-          </h2>
-        </div>
+    <main className=" p-20 text-black flex-grow">
+      {/* title will be inside of the picture */}
+      <div className="relative flex-col justify-start ">
+        <h1 className="text-3xl text-black md-4 p-2 ">Welcome to ACCO</h1>
       </div>
 
-      <div className="flex justify-center mt-10 ">
-        <p>This is the main content area. Add your content here.</p>
+      {/* picture */}
+      <div className="flex justify-center relative">
+        <img
+          src={TestImage}
+          alt="testing image"
+          // className="w-[1000px] h-[600px]"
+        />
+      </div>
+
+      <div className="flex flex-col justify-center mt-10  ">
+        <h1 className="text-3xl underline mb-4 justify-start ">Our Mission</h1>
+        <div className="flex justify-center">
+          <p>
+            {/* At ACCO, we are committed to providing opportunities for growth and
+            learning through efficient, collaborative efforts. We believe in the
+            strength of ownership, ensuring that each client feels empower in
+            their educational journey. With a focus on simplicity and a deep
+            sense of sympathy, we strive to make academic success accessible to
+            all. */}
+            At ACCO, we are dedicated to unlocking your full potential through
+            personalized and collaborative support. Our core values of
+            commitment, opportunity, ownership, efficiency, collaboration,
+            simplicity, and sympathy guide everything we do. We champion the
+            strength of ownership, empowering each client to take control of
+            their educational journey. With a commitment to simplicity and a
+            profound sense of empathy, we make academic success not just a goal,
+            but a reality for everyone.
+          </p>
+        </div>
       </div>
     </main>
   );
 }
 
-//this will be the second body where pictures and such might go on
+//this will show the requirement for an international student
 function Secondbody() {
   return (
-    <main className="bg-gray-500 p-20 text-white flex-grow">
-      <div className="flex justify-center">
-        <p>This is the second content area. Add your content here.</p>
+    <main className="bg-gray-500 p-20  flex-grow">
+      {/* This will  */}
+      <div>
+        <h1 className="flex justify-start text-3xl text-white">
+          English proficiency requirement
+        </h1>
       </div>
+      
     </main>
   );
+}
+
+function Thirdbody() {
+  return <main className="p-20 flex-grow"></main>;
 }
 
 function Footer() {
@@ -94,6 +120,7 @@ function HomePage() {
       </header>
       <Body />
       <Secondbody />
+      <Thirdbody />
       <Footer />
     </div>
   );
