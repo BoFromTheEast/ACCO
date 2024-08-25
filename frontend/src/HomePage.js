@@ -113,7 +113,7 @@ function Secondbody() {
               In addition to the requirement above, students must meet the
               following minimum high school course requirements:
             </p>
-            <ul className="mt-2 ml-3">
+            <ul className="mt-2 ml-6 list-disc">
               <li>4 years of English or your native language</li>
               <li>
                 3 years of science (including at least two years of laboratory
@@ -133,7 +133,7 @@ function Secondbody() {
               who achieve either of the two minimum test scores below are
               automatically considered to have met the 3.00 GPA requirement:
             </p>
-            <ul className="mt-2 ml-3">
+            <ul className="mt-2 ml-6 list-disc">
               <li>
                 1200 SAT combined score (Evidence Based Reading and Writing
                 score + Math score)
