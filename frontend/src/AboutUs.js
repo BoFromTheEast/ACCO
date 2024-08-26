@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function AboutUs(){
-    return{
+function Mainpage() {
+  return <div></div>;
+}
 
-    }
-};
+function AboutUs() {
+  return <Mainpage />;
+}
 
 export default AboutUs;
