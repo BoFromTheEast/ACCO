@@ -1,10 +1,10 @@
 import React from "react";
-import TestImage from "./test.jpg";
+import TestImage from "./pic.jpeg";
 
 // This is the navagation bar
 function Navbar() {
   return (
-    <nav className="bg-gray-700 rounded-md text-white p-4 flex items-center">
+    <nav className="bg-gray-700 text-white p-4 flex items-center">
       <p className="text-2xl mr-4 italic font-bold">
         <a href="/">ACCO</a>
       </p>
@@ -22,17 +22,14 @@ function Navbar() {
       </ul>
       <ul className="flex space-x-4 ml-6">
         <li>
-          <a
-            href="/login"
-            className="bg-blue-400 rounded-md p-1 text-white hover:underline"
-          >
+          <a href="/login" className=" rounded-md text-white hover:underline">
             Login
           </a>
         </li>
         <li>
           <a
             href="/register"
-            className="bg-blue-400 rounded-md p-1 text-white hover:underline"
+            className=" rounded-md text-white hover:underline"
           >
             Register
           </a>
@@ -55,7 +52,7 @@ function Body() {
       <div className="flex justify-center relative">
         <img
           src={TestImage}
-          alt="testing image"
+          alt="Student image"
           // className="w-[1000px] h-[600px]"
         />
       </div>
@@ -148,7 +145,11 @@ function Secondbody() {
 }
 
 function Thirdbody() {
-  return <main className="p-20 flex-grow"></main>;
+  return (
+    <main className="p-20 flex-grow">
+      <div></div>
+    </main>
+  );
 }
 
 function Footer() {
@@ -162,9 +163,10 @@ function Footer() {
 function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-blue-500 p-4 relative">
+      <header>
         <Navbar />
       </header>
+
       <Body />
       <Secondbody />
       <Thirdbody />
